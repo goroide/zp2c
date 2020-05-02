@@ -1,16 +1,26 @@
 {
-  "name": "@circl-design-elements/spacing",
-  "version": "0.0.1",
-  "description": "Spacing helpers for the CIRCL design System",
-  "author": "CIRCL",
-  "homepage": "https://github.com/circl-tyo/circl-design-elements#readme",
-  "license": "MIT",
-  "main": "spacing.js",
+  "name": "@zp2c/spacing",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "GoroIde <goro.ide@rootage.co.jp>",
+  "homepage": "https://github.com/goroide/zp2c#readme",
+  "license": "ISC",
+  "main": "lib/spacing.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/circl-tyo/circl-design-elements.git"
+    "url": "git+https://github.com/goroide/zp2c.git"
   },
-  "publishConfig": {
-    "access": "public"
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/goroide/zp2c/issues"
   }
 }

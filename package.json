@@ -1,30 +1,11 @@
 {
-  "name": "@circl-tyo/circl-design-elements",
+  "name": "zp2c",
   "description": "The UI components and helpers for the CIRCL Design System",
   "version": "0.0.1",
-  "author": "CIRCL",
+  "author": "ZP2C",
   "license": "MIT",
-  "scripts": {
-    "lint": "gulp lint",
-    "clean": "lerna clean --yes",
-    "bootstrap": "lerna bootstrap",
-    "versionup": "lerna version",
-    "versionup:patch": "lerna version patch",
-    "versionup:minor": "lerna version minor",
-    "versionup:major": "lerna version major",
-    "release": "lerna publish from-package"
-  },
+  "private": true,
   "devDependencies": {
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.13.0",
-    "gulp": "^3.9.1",
-    "gulp-eslint": "^5.0.0",
-    "gulp-stylelint": "^9.0.0",
-    "lerna": "^3.15.0",
-    "stylelint": "^10.1.0",
-    "stylelint-config-standard": "^18.3.0",
-    "stylelint-scss": "^3.8.0"
+    "lerna": "^3.20.2"
   }
 }

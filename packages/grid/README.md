@@ -1,5 +1,11 @@
-# CIRCL Design Components
+# `grid`
 
-## Getting Started
+> TODO: description
 
-Please see [CIRCL Design Boilerplate](https://github.com/circl-tyo/circl-boilerplate).
+## Usage
+
+```
+const grid = require('grid');
+
+// TODO: DEMONSTRATE API
+```

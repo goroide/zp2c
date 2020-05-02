@@ -1,25 +1,31 @@
 {
-  "name": "@circl-design-elements/theme",
-  "version": "0.0.1",
-  "description": "Theme template for the CIRCL design System",
-  "author": "CIRCL",
-  "homepage": "https://github.com/circl-tyo/circl-design-elements#readme",
-  "license": "MIT",
+  "name": "@zp2c/theme",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "GoroIde <goro.ide@rootage.co.jp>",
+  "homepage": "https://github.com/goroide/zp2c#readme",
+  "license": "ISC",
+  "main": "lib/theme.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/circl-tyo/circl-design-elements.git"
+    "url": "git+https://github.com/goroide/zp2c.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/goroide/zp2c/issues"
   },
   "dependencies": {
-    "@circl-design-elements/color": "^0.0.1",
-    "@circl-design-elements/spacing": "^0.0.1",
-    "@circl-design-elements/typography": "^0.0.1"
-  },
-  "bundledDependencies": [
-    "@circl-design-elements/color",
-    "@circl-design-elements/spacing",
-    "@circl-design-elements/typography"
-  ],
-  "publishConfig": {
-    "access": "public"
+    "@zp2c/color": "^0.0.0",
+    "@zp2c/spacing": "^0.0.0",
+    "@zp2c/typography": "^0.0.0"
   }
 }

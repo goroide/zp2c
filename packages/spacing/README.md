@@ -1,5 +1,11 @@
-# CIRCL Design Components
+# `spacing`
 
-## Getting Started
+> TODO: description
 
-Please see [CIRCL Design Boilerplate](https://github.com/circl-tyo/circl-boilerplate).
+## Usage
+
+```
+const spacing = require('spacing');
+
+// TODO: DEMONSTRATE API
+```

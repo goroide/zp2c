@@ -1,5 +1,11 @@
-# CIRCL Design Components
+# `color`
 
-## Getting Started
+> TODO: description
 
-Please see [CIRCL Design Boilerplate](https://github.com/circl-tyo/circl-boilerplate).
+## Usage
+
+```
+const color = require('color');
+
+// TODO: DEMONSTRATE API
+```
