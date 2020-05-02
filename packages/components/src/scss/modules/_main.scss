@@ -1,0 +1,42 @@
+//
+// Main
+//
+
+.main {
+  position: relative;
+  display: block;
+  background-color: $background-01;
+  width: 100%;
+}
+
+
+// Container
+.container {
+  width: 100%;
+  padding-right: $margin-01;
+  padding-left: $margin-01;
+  @include media-query {
+    padding-right: $margin-02;
+    padding-left: $margin-02;
+  }
+
+  &--sm {
+    @include container($container-sm);
+  }
+
+  &--md {
+    @include container($container-md);
+  }
+
+  &--lg {
+    @include container($container-lg);
+  }
+
+  &--side-nav {
+    margin-top: 3.5rem;
+    @include media-query(lg) {
+      margin-top: 4rem;
+      margin-left: 18rem;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+//
+// Grid Layout Setting
+//
+
+// Column Width
+@function column-sm($columns: $column-sm) {
+  $column-sm-width: (100% / $columns);
+  @return $column-sm-width;
+}
+
+@function column-md($columns: $column-md) {
+  $column-md-width: (100% / $columns);
+  @return $column-md-width;
+}
+
+@function column-lg($columns: $column-lg) {
+  $column-lg-width: (100% / $columns);
+  @return $column-lg-width;
+}
+
+
+//
+// Row
+//
+
+@mixin row($gutter: true, $margin: true) {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+
+  @if $gutter {
+    > * {
+      padding-right: $gutter-01 / 2;
+      padding-left: $gutter-01 / 2;
+      @include media-query {
+        padding-right: $gutter-02 / 2;
+        padding-left: $gutter-02 / 2;
+      }
+    }
+  }
+
+  @if $margin {
+    margin-right: -1 * $gutter-01 / 2;
+    margin-left: -1 * $gutter-01 / 2;
+    @include media-query {
+      margin-right: -1 * $gutter-02 / 2;
+      margin-left: -1 * $gutter-02 / 2;
+    }
+  }
+}
+
+
+//
+// Column
+//
+
+@mixin column($breakpoint: 'sm', $columns: 0) {
+  $width-sm: column-sm();
+  $flex-basis-sm: $width-sm * $columns;
+  $width-md: column-md();
+  $flex-basis-md: $width-md * $columns;
+  $width-lg: column-lg();
+  $flex-basis-lg: $width-lg * $columns;
+
+  @if ($breakpoint == 'lg') {
+    @include media-query(lg) {
+      @if ($columns == 0) {
+        flex: 1 0 0;
+        width: auto;
+      } @else {
+        flex: 0 0 $flex-basis-lg;
+        min-width: $flex-basis-lg;
+      }
+    }
+  } @else if ($breakpoint == 'md') {
+    @include media-query {
+      @if ($columns == 0) {
+        flex: 1 0 0;
+        width: auto;
+      } @else {
+        flex: 0 0 $flex-basis-md;
+        min-width: $flex-basis-md;
+      }
+    }
+  } @else {
+    @if ($columns == 0) {
+      flex: 1 0 0;
+      width: auto;
+    } @else {
+      flex: 0 0 $flex-basis-sm;
+      min-width: $flex-basis-sm;
+    }
+  }
+}
+
+
+//
+// Container
+//
+
+@mixin container($container-scale) {
+  max-width: $container-scale;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}

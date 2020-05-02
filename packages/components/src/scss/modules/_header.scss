@@ -1,0 +1,43 @@
+//
+// Header
+//
+
+.header {
+  @include fixed($top: 0, $left: 0);
+  display: flex;
+  justify-content: space-between;
+  height: 3.5rem;
+  width: 100%;
+  padding-right: $margin-01;
+  padding-left: $margin-01;
+  z-index: 3;
+  @include media-query {
+    height: 4rem;
+    padding-right: $margin-02;
+    padding-left: $margin-02;
+  }
+
+  &__menu-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 3.5rem;
+    @include media-query {
+      display: none;
+      width: 4rem;
+    }
+  }
+
+  &__container--right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__container--left {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+}

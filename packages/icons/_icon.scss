@@ -1,0 +1,10 @@
+//
+// Icons
+//
+
+.icon {
+  @include icons;
+  font-feature-settings: 'liga';
+  font-variant-ligatures: discretionary-ligatures;
+  pointer-events: none;
+}

@@ -1,0 +1,89 @@
+//
+// Pagination
+//
+
+.pagination {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__btn {
+    line-height: 1.5rem;
+    padding: 0 $space-01;
+    @include motion(background-color, 100ms, on);
+    @include media-query {
+      line-height: 2.5rem;
+      padding: 0 $space-03;
+    }
+
+    &:hover {
+      background-color: $hover-01;
+    }
+  }
+
+  &__btn--disabled {
+    color: $disabled-02;
+    pointer-events: none;
+  }
+
+  &__icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    @include motion(background-color, 100ms, on);
+    @include media-query {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    &:hover {
+      background-color: $hover-01;
+    }
+  }
+
+  &__icon-btn--disabled {
+    color: $disabled-02;
+    pointer-events: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 $space-01;
+  }
+
+  &__item {
+    margin-right: $space-01;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__item--current {
+  }
+
+  &__item--current .pagination__item-link {
+    font-weight: map-get($font-weight, regular);
+    pointer-events: none;
+  }
+
+  &__item-link {
+    display: block;
+    line-height: 1.5rem;
+    text-align: center;
+    width: 1.5rem;
+    @include motion(background-color, 100ms, on);
+    @include media-query {
+      line-height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    &:hover {
+      background-color: $hover-01;
+    }
+  }
+}

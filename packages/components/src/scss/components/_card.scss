@@ -1,0 +1,78 @@
+//
+// Card
+//
+
+.card {
+  position: relative;
+  margin-bottom: $space-04;
+
+  &__container {
+    display: block;
+    background-color: $background-container;
+    border: $border-weight solid $border-01;
+    overflow: hidden;
+  }
+
+  &__container--link {
+    cursor: pointer;
+    @include motion(border-color, 200ms, on);
+
+    &:hover {
+      border-color: $border-hover;
+      @include motion(border-color, 150ms, on);
+    }
+  }
+
+  &__media {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 56.25%;
+  }
+
+  &__header, &__content, &__content--primary {
+    padding: $space-03;
+  }
+
+  &__content--secondary, &__content--btn {
+    padding: 0 $space-03 $space-03;
+  }
+
+  &__content--secondary {
+    color: $secondary;
+  }
+
+  &__btn {
+    display: block;
+  }
+}
+
+
+// Horizontal
+.card__container--horizontal {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  .card__media {
+    width: 6rem;
+    padding-bottom: 6rem;
+
+    @include media-query(sm) {
+      width: 10rem;
+      padding-bottom: 10rem;
+    }
+  }
+
+  .card__content--media {
+    width: calc(100% - 6rem);
+
+    @include media-query(sm) {
+      width: calc(100% - 10rem);
+    }
+  }
+
+  .card__btn {
+    margin-top: $space-04;
+  }
+}

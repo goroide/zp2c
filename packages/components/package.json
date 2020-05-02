@@ -1,0 +1,46 @@
+{
+  "name": "circl-design-components",
+  "version": "0.0.1",
+  "description": "The sets of UI Components for the CIRCL design System",
+  "author": "CIRCL",
+  "homepage": "https://github.com/circl-tyo/circl-design-elements#readme",
+  "license": "MIT",
+  "main": "src/js/modules.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/circl-tyo/circl-design-elements.git"
+  },
+  "scripts": {
+    "test": "rm -rf coverage && karma start --singleRun"
+  },
+  "dependencies": {
+    "@circl-design-elements/grid": "^0.0.1",
+    "@circl-design-elements/icons": "^0.0.1",
+    "@circl-design-elements/motion": "^0.0.1",
+    "@circl-design-elements/theme": "^0.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage-istanbul-reporter": "^2.0.5",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "^0.0.32",
+    "karma-webpack": "^3.0.5",
+    "webpack": "^3.8.1"
+  },
+  "bundledDependencies": [
+    "@circl-design-elements/grid",
+    "@circl-design-elements/icons",
+    "@circl-design-elements/motion",
+    "@circl-design-elements/theme"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,13 @@
+//
+// Color
+//
+
+.text {
+  &--black {
+    color: $black;
+  }
+
+  &--white {
+    color: $white;
+  }
+}

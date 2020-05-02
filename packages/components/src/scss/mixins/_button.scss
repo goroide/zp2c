@@ -1,0 +1,19 @@
+//
+// Button
+//
+
+@mixin btn($display: inline-block, $background-color: $primary, $color: $primary-inverse) {
+  position: relative;
+  display: $display;
+  background-color: $background-color;
+  color: $color;
+  cursor: pointer;
+  min-width: 8rem;
+  padding: $space-02 $space-04;
+
+  &:not(:disabled):hover .btn__text {
+    &::after {
+      opacity: 1;
+    }
+  }
+}

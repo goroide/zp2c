@@ -1,0 +1,92 @@
+//
+// Text field
+//
+
+.text-field {
+  background-color: $background-input;
+  outline: $border-weight-bold solid transparent;
+  outline-offset: -$border-weight-bold;
+  width: 100%;
+  padding: $space-02 $space-03;
+
+  &::placeholder {
+    color: $placeholder;
+  }
+
+  &:disabled {
+    background-color: $disabled-01;
+
+    &::placeholder {
+      color: $disabled-02;
+    }
+  }
+
+  &:focus {
+    outline: $border-weight-bold solid $border-focus;
+  }
+
+  &[aria-invalid="true"] {
+    outline: $border-weight-bold solid $invalid !important;
+  }
+
+  &-clear {
+    border-bottom: $border-weight-bold solid $border-01;
+    width: 100%;
+    padding: $space-02 0;
+
+    &::placeholder {
+      color: $placeholder;
+    }
+
+    &:disabled {
+      border-color: $disabled-02;
+
+      &::placeholder {
+        color: $disabled-02;
+      }
+    }
+
+    &:focus {
+      border-color: $border-focus;
+    }
+  }
+
+  &-clear[aria-invalid="true"] {
+    border-color: $invalid !important;
+  }
+}
+//
+// Text area
+//
+
+.text-area {
+  display: block;
+  background-color: $background-input;
+  border: none;
+  outline: $border-weight-bold solid transparent;
+  outline-offset: -$border-weight-bold;
+  min-width: 10rem;
+  width: 100%;
+  padding: $space-02 $space-03;
+  resize: vertical;
+
+  &::placeholder {
+    color: $placeholder;
+  }
+
+  &:disabled {
+    background-color: $disabled-01;
+
+    &::placeholder {
+      color: $disabled-02;
+    }
+  }
+
+  &:focus {
+    outline: $border-weight-bold solid $border-focus;
+  }
+
+  &[aria-invalid="true"] {
+    outline: $border-weight-bold solid $invalid !important;
+  }
+}

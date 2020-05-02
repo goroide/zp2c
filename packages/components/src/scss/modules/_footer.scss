@@ -1,0 +1,14 @@
+//
+// Footer
+//
+
+.footer {
+  position: relative;
+  display: block;
+
+  &--side-nav {
+    @include media-query(lg) {
+      margin-left: 18rem;
+    }
+  }
+}

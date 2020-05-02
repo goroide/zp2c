@@ -1,0 +1,28 @@
+//
+// Forms
+//
+
+.form {
+  &__fieldset {
+    width: 100%;
+  }
+
+  &__item {
+    margin-bottom: $space-04;
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: $space-01;
+  }
+
+  &__validation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: $invalid;
+    width: 100%;
+    margin-top: $space-01;
+  }
+}

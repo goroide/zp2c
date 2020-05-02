@@ -1,0 +1,21 @@
+//
+// Tag
+//
+
+.tag {
+  font-size: map-get($caption, font-size);
+  font-weight: map-get($font-weight, regular);
+  letter-spacing: map_get($caption, letter-spacing);
+  line-height: map-get($line-height, default);
+  display: inline-flex;
+  align-items: center;
+  background-color: $background-tag;
+  color: $secondary;
+  height: 1.5rem;
+  margin: 0.25rem 0.25rem 0.25rem 0;
+  padding: 0 $space-01;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

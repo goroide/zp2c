@@ -1,0 +1,75 @@
+//
+// Modal
+//
+
+[data-modal-target] {
+  cursor: pointer;
+}
+
+.modal {
+  @include fixed(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($primary, .5);
+  opacity: 0;
+  @include motion((opacity, visibility), (250ms, 250ms), on);
+  visibility: hidden;
+  z-index: 1;
+
+  &--side-nav {
+    @include media-query(lg) {
+      left: 18rem;
+    }
+  }
+
+  &--visible {
+    opacity: 1;
+    @include motion((opacity, visibility), (200ms, 200ms), on);
+    visibility: visible;
+  }
+
+  &__container {
+    position: relative;
+    background-color: $background-container;
+    max-width: 64rem;
+    width: 50%;
+    padding: $space-03;
+    @include media-query {
+      padding: $space-04;
+    }
+  }
+
+  &__container--lg {
+    padding: 0 !important;
+  }
+
+  &__close {
+    @include absolute($top: 0, $right: 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    @include motion(background-color, 100ms, on);
+
+    &:hover {
+      background-color: $hover-01;
+    }
+  }
+
+  &__header {
+    width: calc(100% - 1.5rem);
+    margin-bottom: $space-04;
+  }
+
+  &__content {
+    width: calc(100% - 1.5rem);
+    margin-bottom: $space-05;
+  }
+
+  &__footer {
+    width: calc(100% - 1.5rem);
+  }
+}

@@ -1,0 +1,54 @@
+//
+// Select
+//
+
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 20rem;
+  min-width: 8rem;
+
+  &::after {
+    @include absolute($top: 50%, $right: $space-03);
+    @include icons;
+    transform: translateY(-50%);
+    content: $chevron_down;
+    pointer-events: none;
+  }
+
+  &--disabled {
+    &::after {
+      color: $disabled-02;
+    }
+  }
+
+  &--invalid {
+    .select__input {
+      outline: $border-weight-bold solid $invalid !important;
+    }
+  }
+
+  &__input {
+    display: block;
+    background-color: $background-input;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    width: 100%;
+    padding: $space-02 $space-05 $space-02 $space-03;
+
+    &:disabled {
+      background-color: $disabled-01;
+      color: $disabled-02;
+    }
+
+    &:focus {
+      outline: $border-weight-bold solid $border-focus;
+    }
+
+    &:not(:disabled):hover {
+      background-color: $hover-02;
+    }
+  }
+}
