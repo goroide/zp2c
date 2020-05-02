@@ -22,5 +22,14 @@
   },
   "bugs": {
     "url": "https://github.com/goroide/zp2c/issues"
+  },
+  "dependencies": {
+    "@zp2c/color": "^0.0.0",
+    "@zp2c/grid": "^0.0.0",
+    "@zp2c/layout": "^0.0.0",
+    "@zp2c/motion": "^0.0.0",
+    "@zp2c/spacing": "^0.0.0",
+    "@zp2c/typography": "^0.0.0",
+    "@zp2c/visual-forms": "^0.0.0"
   }
 }
