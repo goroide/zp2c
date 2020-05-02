@@ -1,6 +1,15 @@
 {
   "packages": [
-    "packages/*"
+    "packages/design-elements/color",
+    "packages/design-elements/grid",
+    "packages/design-elements/icons",
+    "packages/design-elements/layout",
+    "packages/design-elements/motion",
+    "packages/design-elements/spacing",
+    "packages/design-elements/typography",
+    "packages/design-elements/visual-forms",
+    "packages/theme",
+    "packages/zp2c-components"
   ],
   "version": "independent"
 }
