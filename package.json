@@ -1,8 +1,8 @@
 {
-  "name": "@circl-tyo/circl-design-elements",
+  "name": "@goroide/zp2c",
   "description": "The UI components and helpers for the CIRCL Design System",
   "version": "0.0.1",
-  "author": "CIRCL",
+  "author": "ZP2C",
   "license": "MIT",
   "scripts": {
     "lint": "gulp lint",

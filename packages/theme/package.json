@@ -1,23 +1,23 @@
 {
-  "name": "@circl-design-elements/theme",
+  "name": "@zp2c/theme",
   "version": "0.0.1",
   "description": "Theme template for the CIRCL design System",
-  "author": "CIRCL",
-  "homepage": "https://github.com/circl-tyo/circl-design-elements#readme",
+  "author": "ZP2C",
+  "homepage": "https://github.com/goroide/zp2c#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/circl-tyo/circl-design-elements.git"
+    "url": "git+https://github.com/goroide/zp2c.git"
   },
   "dependencies": {
-    "@circl-design-elements/color": "^0.0.1",
-    "@circl-design-elements/spacing": "^0.0.1",
-    "@circl-design-elements/typography": "^0.0.1"
+    "@zp2c/color": "^0.0.1",
+    "@zp2c/spacing": "^0.0.1",
+    "@zp2c/typography": "^0.0.1"
   },
   "bundledDependencies": [
-    "@circl-design-elements/color",
-    "@circl-design-elements/spacing",
-    "@circl-design-elements/typography"
+    "@zp2c/color",
+    "@zp2c/spacing",
+    "@zp2c/typography"
   ],
   "publishConfig": {
     "access": "public"

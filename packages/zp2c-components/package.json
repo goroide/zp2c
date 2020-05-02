@@ -1,23 +1,23 @@
 {
-  "name": "circl-design-components",
+  "name": "zp2c-components",
   "version": "0.0.1",
   "description": "The sets of UI Components for the CIRCL design System",
-  "author": "CIRCL",
-  "homepage": "https://github.com/circl-tyo/circl-design-elements#readme",
+  "author": "ZP2C",
+  "homepage": "https://github.com/goroide/zp2c#readme",
   "license": "MIT",
   "main": "src/js/modules.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/circl-tyo/circl-design-elements.git"
+    "url": "git+https://github.com/goroide/zp2c.git"
   },
   "scripts": {
     "test": "rm -rf coverage && karma start --singleRun"
   },
   "dependencies": {
-    "@circl-design-elements/grid": "^0.0.1",
-    "@circl-design-elements/icons": "^0.0.1",
-    "@circl-design-elements/motion": "^0.0.1",
-    "@circl-design-elements/theme": "^0.0.1"
+    "@zp2c/grid": "^0.0.1",
+    "@zp2c/icons": "^0.0.1",
+    "@zp2c/motion": "^0.0.1",
+    "@zp2c/theme": "^0.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -35,10 +35,10 @@
     "webpack": "^3.8.1"
   },
   "bundledDependencies": [
-    "@circl-design-elements/grid",
-    "@circl-design-elements/icons",
-    "@circl-design-elements/motion",
-    "@circl-design-elements/theme"
+    "@zp2c/grid",
+    "@zp2c/icons",
+    "@zp2c/motion",
+    "@zp2c/theme"
   ],
   "publishConfig": {
     "access": "public"

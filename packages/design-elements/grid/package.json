@@ -1,14 +1,14 @@
 {
-  "name": "@circl-design-elements/grid",
+  "name": "@zp2c/grid",
   "version": "0.0.1",
   "description": "Grid helpers for the CIRCL design System",
-  "author": "CIRCL",
-  "homepage": "https://github.com/circl-tyo/circl-design-elements#readme",
+  "author": "ZP2C",
+  "homepage": "https://github.com/goroide/zp2c#readme",
   "license": "MIT",
   "main": "grid.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/circl-tyo/circl-design-elements.git"
+    "url": "git+https://github.com/goroide/zp2c.git"
   },
   "publishConfig": {
     "access": "public"
