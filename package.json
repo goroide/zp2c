@@ -1,5 +1,9 @@
 {
-  "name": "root",
+  "name": "zp2c",
+  "description": "The UI components and helpers for the CIRCL Design System",
+  "version": "0.0.1",
+  "author": "ZP2C",
+  "license": "MIT",
   "private": true,
   "devDependencies": {
     "lerna": "^3.20.2"
