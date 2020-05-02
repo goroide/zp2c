@@ -1,7 +1,7 @@
 {
   "name": "zp2c",
   "description": "The UI components and helpers for the CIRCL Design System",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "ZP2C",
   "license": "MIT",
   "devDependencies": {
