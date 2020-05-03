@@ -1,11 +1,11 @@
 {
-  "name": "circl-components",
+  "name": "rootage-components",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "GoroIde <goro.ide@rootage.co.jp>",
   "homepage": "https://github.com/goroide/zp2c#readme",
   "license": "ISC",
-  "main": "lib/circl-components.js",
+  "main": "lib/rootage-components.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -24,6 +24,6 @@
     "url": "https://github.com/goroide/zp2c/issues"
   },
   "dependencies": {
-    "@circl/design-elements": "^0.0.0"
+    "@rootage/design-elements": "^0.0.0"
   }
 }

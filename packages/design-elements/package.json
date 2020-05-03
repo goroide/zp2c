@@ -1,5 +1,5 @@
 {
-  "name": "@circl/design-elements",
+  "name": "@rootage/design-elements",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "GoroIde <goro.ide@rootage.co.jp>",
@@ -24,11 +24,11 @@
     "url": "https://github.com/goroide/zp2c/issues"
   },
   "dependencies": {
-    "@circl/color": "^0.0.0",
-    "@circl/grid": "^0.0.0",
-    "@circl/layout": "^0.0.0",
-    "@circl/motion": "^0.0.0",
-    "@circl/spacing": "^0.0.0",
-    "@circl/typography": "^0.0.0"
+    "@rootage/color": "^0.0.0",
+    "@rootage/grid": "^0.0.0",
+    "@rootage/layout": "^0.0.0",
+    "@rootage/motion": "^0.0.0",
+    "@rootage/spacing": "^0.0.0",
+    "@rootage/typography": "^0.0.0"
   }
 }

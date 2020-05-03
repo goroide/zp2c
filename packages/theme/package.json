@@ -1,5 +1,5 @@
 {
-  "name": "@circl/theme",
+  "name": "@rootage/theme",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "GoroIde <goro.ide@rootage.co.jp>",
@@ -24,8 +24,8 @@
     "url": "https://github.com/goroide/zp2c/issues"
   },
   "dependencies": {
-    "@circl/color": "^0.0.0",
-    "@circl/spacing": "^0.0.0",
-    "@circl/typography": "^0.0.0"
+    "@rootage/color": "^0.0.0",
+    "@rootage/spacing": "^0.0.0",
+    "@rootage/typography": "^0.0.0"
   }
 }

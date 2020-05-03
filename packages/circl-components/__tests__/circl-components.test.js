@@ -1,7 +1,7 @@
 'use strict';
 
-const circlComponents = require('..');
+const rootageComponents = require('..');
 
-describe('circl-components', () => {
+describe('rootage-components', () => {
     it('needs tests');
 });

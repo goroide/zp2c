@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = circlComponents;
+module.exports = rootageComponents;
 
-function circlComponents() {
+function rootageComponents() {
     // TODO
 }

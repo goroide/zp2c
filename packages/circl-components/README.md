@@ -1,11 +1,11 @@
-# `circl-components`
+# `rootage-components`
 
 > TODO: description
 
 ## Usage
 
 ```
-const circlComponents = require('circl-components');
+const rootageComponents = require('rootage-components');
 
 // TODO: DEMONSTRATE API
 ```
