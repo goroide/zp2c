@@ -1,0 +1,34 @@
+{
+  "name": "@circl/design-elements",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "GoroIde <goro.ide@rootage.co.jp>",
+  "homepage": "https://github.com/goroide/zp2c#readme",
+  "license": "ISC",
+  "main": "lib/design-elements.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goroide/zp2c.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/goroide/zp2c/issues"
+  },
+  "dependencies": {
+    "@circl/color": "^0.0.0",
+    "@circl/grid": "^0.0.0",
+    "@circl/layout": "^0.0.0",
+    "@circl/motion": "^0.0.0",
+    "@circl/spacing": "^0.0.0",
+    "@circl/typography": "^0.0.0"
+  }
+}
